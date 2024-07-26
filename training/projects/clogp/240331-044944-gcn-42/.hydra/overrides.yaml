@@ -1,0 +1,7 @@
+- project=clogp
+- +dataset=clogp_smallzinc
+- model.name=gcn_3conv1fc
+- lightning_trainer.max_epochs=400
+- seed=42
+- model.pool=add
+- suffix=-gcn-42

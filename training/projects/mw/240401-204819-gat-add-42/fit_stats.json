@@ -1,0 +1,1 @@
+{"val_metrics": {"val_mae": 0.2894, "val_mse": 0.2087, "val_pearson_r": 0.9998, "val_r2": 0.9995, "val_loss": 0.2086}, "train_metrics": {"train_mae": 0.3439, "train_mse": 0.2411, "train_pearson_r": 0.9997, "train_r2": 0.9994, "train_loss": 0.241}, "time_metrics": {"training_time": "0:34:30.758976", "time/step": "0:00:00.014707", "time/epoch": "0:00:05.176897"}}

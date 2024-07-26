@@ -1,0 +1,7 @@
+- project=mw
+- +dataset=mw_smallzinc
+- model.name=gat_3conv1fc
+- lightning_trainer.max_epochs=400
+- seed=44
+- model.pool=max
+- suffix=-gat-max-44

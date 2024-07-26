@@ -1,0 +1,60 @@
+project: mw
+run: ${now:%y%m%d-%H%M%S}${suffix}
+suffix: -gat-max-42
+seed: 42
+model:
+  name: gat_3conv1fc
+  pool: max
+fit: true
+test: true
+testing_with_additional_metrics: true
+stop_early: null
+early_stopping:
+  monitor: val_loss
+resume_from_ckpt: null
+checkpointing:
+  every_n_epochs: null
+dataset:
+  shuffle_seed: 42
+  name: mw_smallzinc
+  dir: ../data
+  task_type: regression
+  loss_fun: mse
+  split:
+  - 0.8
+  - 0.1
+  - 0.1
+  split_mode: random
+  data_type: graph
+batch_size: 256
+lightning_trainer:
+  accelerator: auto
+  max_epochs: 400
+logging:
+  wandb: true
+  tensorboard: true
+  csv: true
+wandb_kwargs:
+  project: ${project}
+  name: ${now:%y%m%d-%H%M%S}${suffix}
+  save_dir: projects/${project}
+lightning_module:
+  task_type: ${dataset.task_type}
+  loss_fun: ${dataset.loss_fun}
+  optimizer: ${optim.optimizer}
+  base_lr: ${optim.base_lr}
+  weight_decay: ${optim.weight_decay}
+optim:
+  optimizer: adam
+  base_lr: 0.001
+  weight_decay: 0.0
+torch:
+  num_workers: 31
+  num_threads: 31
+  float32_precision: medium
+hydra:
+  run:
+    dir: projects/${project}/${now:%y%m%d-%H%M%S}${suffix}
+  sweep:
+    dir: projects/${project}
+    subdir: ${now:%y%m%d-%H%M%S}${suffix}

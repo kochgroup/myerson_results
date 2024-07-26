@@ -1,0 +1,7 @@
+- project=kinhib_early_tests
+- +dataset=kinase_inhibitors
+- model.name=gat_3conv1fc
+- lightning_trainer.max_epochs=400
+- suffix=-bce_logits-y1-ll_fc
+- dataset.task_type=binary_classification
+- dataset.loss_fun=bce_logits

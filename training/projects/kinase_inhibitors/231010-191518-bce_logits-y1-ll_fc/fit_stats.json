@@ -1,0 +1,19 @@
+{
+    "val_metrics": {
+        "val_accuracy": 0.8127,
+        "val_auroc": 0.8857,
+        "val_f1score": 0.8183,
+        "val_loss": 0.4339
+    },
+    "train_metrics": {
+        "train_accuracy": 0.8299,
+        "train_auroc": 0.8985,
+        "train_f1score": 0.84,
+        "train_loss": 0.4044
+    },
+    "time_metrics": {
+        "training_time": "0:16:32.797151",
+        "time/step": "0:00:00.014264",
+        "time/epoch": "0:00:02.481993"
+    }
+}

@@ -1,0 +1,21 @@
+[2024-03-30 19:43:14,327][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpg5v6wavx
+[2024-03-30 19:43:14,327][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpg5v6wavx/_remote_module_non_scriptable.py
+[2024-03-30 19:43:19,022][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: True (cuda), used: True
+[2024-03-30 19:43:19,022][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2024-03-30 19:43:19,025][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2024-03-30 19:43:19,027][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2024-03-30 19:43:19,284][pytorch_lightning.accelerators.cuda][INFO] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[2024-03-30 19:43:19,287][pytorch_lightning.callbacks.model_summary][INFO] - 
+  | Name          | Type             | Params
+---------------------------------------------------
+0 | model         | GCNConvModel     | 133 K 
+1 | train_metrics | MetricCollection | 0     
+2 | val_metrics   | MetricCollection | 0     
+3 | test_metrics  | MetricCollection | 0     
+---------------------------------------------------
+133 K     Trainable params
+0         Non-trainable params
+133 K     Total params
+0.534     Total estimated model params size (MB)
+[2024-03-30 20:13:51,565][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=400` reached.
+[2024-03-30 20:13:52,576][pytorch_lightning.accelerators.cuda][INFO] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]

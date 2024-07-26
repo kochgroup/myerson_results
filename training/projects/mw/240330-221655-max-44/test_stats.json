@@ -1,0 +1,8 @@
+{
+    "test_kendall_tau": 0.8399,
+    "test_mae": 3.5718,
+    "test_mse": 27.2681,
+    "test_pearson_r": 0.9686,
+    "test_r2": 0.932,
+    "test_loss": 27.265
+}
