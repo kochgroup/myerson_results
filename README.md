@@ -1,3 +1,8 @@
+
+
+[![DOI](https://zenodo.org/badge/826092386.svg)](https://doi.org/10.5281/zenodo.20099800)
+
+
 # Myerson Values to Explain Cheminformatics Data
 
 ## [myerson]() -- A package to explain GNNs
